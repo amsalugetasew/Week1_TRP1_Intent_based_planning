@@ -63,22 +63,22 @@ All code changes must be:
 ##### │ - User prompts │
 ##### └──────────────┬───────────────┘
 ##   │ postMessage
-##### ┌──────────────▼───────────────┐
-##### │ Extension Host (Agent Loop) │
-##### │ - LLM calls │
-##### │ - Tool execution │
-##### └──────────────┬───────────────┘
+#####   ┌──────────────▼───────────────┐
+#####   │ Extension Host (Agent Loop) │
+######  │ - LLM calls │
+######  │ - Tool execution │
+#####   └──────────────┬───────────────┘
 ##   │ intercepted
-##### ┌──────────────▼───────────────┐
-##### │ Hook Engine (Middleware) │ ← THIS PROJECT
-##### │ - Pre-Hooks │
-##### │ - Post-Hooks │
-##### │ - Governance │
-##### └──────────────┬───────────────┘
+#####   ┌──────────────▼───────────────┐
+#####   │ Hook Engine (Middleware) │ ← THIS PROJECT
+######  │ - Pre-Hooks │
+######  │ - Post-Hooks │
+######  │ - Governance │
+#####   └──────────────┬───────────────┘
 ##   │ reads/writes
-##### ┌──────────────▼───────────────┐
-##### │ .orchestration/ │
-##### │ - Intent state │
-##### │ - Agent ledger │
-##### │ - Shared brain │
-##### └──────────────────────────────┘
+#####   ┌──────────────▼───────────────┐
+#####   │ .orchestration/ │
+######  │ - Intent state │
+######  │ - Agent ledger │
+######  │ - Shared brain │
+#####   └──────────────────────────────┘
