@@ -10,6 +10,7 @@ class FileUploadManager {
         this.options = options;
         this.dropZone = null;
         this.fileInput = null;
+        this.selectFileBtn = null;
         this.isProcessing = false;
         
         this.init();
@@ -18,6 +19,7 @@ class FileUploadManager {
     init() {
         this.dropZone = document.getElementById('dropZone');
         this.fileInput = document.getElementById('fileInput');
+        this.selectFileBtn = document.getElementById('selectFileBtn');
         
         if (!this.dropZone || !this.fileInput) {
             throw new Error('File upload elements not found in DOM');
@@ -27,6 +29,13 @@ class FileUploadManager {
     }
     
     setupEventListeners() {
+        const openFileDialog = () => {
+            if (this.isProcessing) return;
+            // Reset so selecting the same file again still triggers `change`.
+            this.fileInput.value = '';
+            this.fileInput.click();
+        };
+
         // File input change event
         this.fileInput.addEventListener('change', (e) => {
             const file = e.target.files[0];
@@ -55,18 +64,37 @@ class FileUploadManager {
             }
         });
         
-        // Click to upload
-        this.dropZone.addEventListener('click', () => {
-            this.fileInput.click();
+        // Dedicated select button (prevents duplicate bubbling click behavior)
+        if (this.selectFileBtn) {
+            this.selectFileBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                openFileDialog();
+            });
+        }
+
+        // Click anywhere on drop zone to upload (except button which handles itself)
+        this.dropZone.addEventListener('click', (e) => {
+            if (e.target && e.target.closest && e.target.closest('#selectFileBtn')) {
+                return;
+            }
+            openFileDialog();
         });
     }
     
     async handleFile(file) {
+        if (this.isProcessing) {
+            return;
+        }
+
+        this.isProcessing = true;
+
         try {
             // Validate file
             const validation = this.validateFile(file);
             if (!validation.isValid) {
                 this.showError(validation.error);
+                this.isProcessing = false;
                 return;
             }
             
@@ -94,6 +122,9 @@ class FileUploadManager {
             if (this.options.onError) {
                 this.options.onError(error);
             }
+        } finally {
+            this.isProcessing = false;
+            this.fileInput.value = '';
         }
     }
     
