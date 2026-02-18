@@ -1,2 +1,8 @@
-{"ts":"2026-02-18T14:54:30+03:00","actor":"agent","event":"bootstrap","message":"Initialized orchestration trace file."}
-{"ts":"2026-02-18T14:54:31+03:00","actor":"agent","event":"docs.restructure","message":"Planning/specification docs moved under specify/."}
+{"ts":"2026-02-18T14:54:30+03:00",
+"actor":"agent",
+"event":"bootstrap",
+"message":"Initialized orchestration trace file."}
+{"ts":"2026-02-18T14:54:31+03:00",
+"actor":"agent",
+"event":"docs.restructure",
+"message":"Planning/specification docs moved under specify/."}
