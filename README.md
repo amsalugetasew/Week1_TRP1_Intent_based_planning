@@ -24,7 +24,7 @@ Web-based Excel analysis application with modular architecture, local-first proc
 ## Current Structure
 
 ```text
-Excel-Based-Data-Analzer/
+Week1_TRP1_Intent_based_planning/
 ├── README.md
 ├── CLAUDE.md
 ├── .orchestration/
