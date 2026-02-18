@@ -1,72 +1,75 @@
-# Excel Analyzer — Current Project Structure
+# Excel Analyzer — Project Structure (Revised)
 
-This document reflects the **current, actual repository layout** after reorganizing planning/specification documents under `specify/`.
+This document reflects the current repository layout after adding:
 
-## Root Layout
+- `src/hooks/hook-engine.js`
+- `.orchestration/*`
+- `CLAUDE.md`
+
+## Repository Tree
 
 ```text
-Excel-Based-Data-Analzer/
+Week1_TRP1_Intent_based_planning/
 ├── README.md
 ├── specify/
-│   ├── specification.md
-│   ├── memory/
-│   │   └── constitution.md
-│   ├── plan/
-│   │   └── plan.md
-│   ├── architecture/
-│   │   └── architecture.md
-│   └── project_structure/
-│       └── project_structure.md
-└── src/
-    ├── index.html
-    ├── css/
-    │   └── styles.css
-    └── js/
-        ├── main.js
-        ├── config/
-        │   ├── defaults.js
-        │   ├── settings.js
-        │   └── themes.js
-        ├── events/
-        │   ├── event-handlers.js
-        │   └── event-system.js
-        ├── modules/
-        │   ├── analytics.js
-        │   ├── dashboard.js
-        │   ├── data-processor.js
-        │   ├── exporter.js
-        │   ├── file-upload.js
-        │   ├── help.js
-        │   ├── notifications.js
-        │   ├── settings.js
-        │   └── visualizer.js
-        └── utils/
-            ├── formatters.js
-            ├── helpers.js
-            └── validators.js
+│   └── specification.md
+└── Excel-Based-Data-Analzer/
+    ├── README.md
+    ├── CLAUDE.md
+    ├── .orchestration/
+    │   ├── active_intents.yaml
+    │   ├── agent_trace.jsonl
+    │   └── intent_map.md
+    ├── specify/
+    │   ├── specification.md
+    │   ├── memory/
+    │   │   └── constitution.md
+    │   ├── plan/
+    │   │   └── plan.md
+    │   ├── architecture/
+    │   │   └── architecture.md
+    │   └── project_structure/
+    │       └── project_structure.md
+    └── src/
+        ├── index.html
+        ├── css/
+        │   └── styles.css
+        ├── hooks/
+        │   └── hook-engine.js
+        └── js/
+            ├── main.js
+            ├── config/
+            │   ├── defaults.js
+            │   ├── settings.js
+            │   └── themes.js
+            ├── events/
+            │   ├── event-handlers.js
+            │   └── event-system.js
+            ├── modules/
+            │   ├── analytics.js
+            │   ├── dashboard.js
+            │   ├── data-processor.js
+            │   ├── exporter.js
+            │   ├── file-upload.js
+            │   ├── help.js
+            │   ├── notifications.js
+            │   ├── settings.js
+            │   └── visualizer.js
+            └── utils/
+                ├── formatters.js
+                ├── helpers.js
+                └── validators.js
 ```
 
-## Documentation Organization
+## Structure Notes
 
-All governance/specification/planning documents are grouped under `specify/`:
+- `src/hooks/` is reserved for hook-system code (currently `hook-engine.js`).
+- `.orchestration/` stores operational memory and tracing artifacts.
+- `CLAUDE.md` stores durable lessons and working agreements.
+- `specify/` contains project governance/planning/specification documents.
 
-- `specify/specification.md` → product requirements/specification
-- `specify/memory/constitution.md` → project constitution/principles
-- `specify/plan/plan.md` → implementation plan
-- `specify/architecture/architecture.md` → architecture decisions
-- `specify/project_structure/project_structure.md` → this structure reference
+## Maintenance Rule
 
-## Source Code Organization (`src/`)
+Whenever files/folders are reorganized, update this document and both README files in the same change.
 
-- `index.html` — main web app shell and script wiring
-- `css/styles.css` — application styling
-- `js/main.js` — app orchestration (upload → preview → analyze → dashboard → export)
-- `js/modules/` — domain modules (upload, processing, visualization, dashboard, export, etc.)
-- `js/config/` — defaults, settings, and themes
-- `js/events/` — event system and handlers
-- `js/utils/` — shared helper/formatter/validator utilities
 
-## Notes
-
-- This file is intentionally aligned to the **real folders currently in the repository**.
-- If files/folders are changed again, update this document immediately to keep it accurate.
