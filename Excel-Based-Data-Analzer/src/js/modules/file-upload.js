@@ -1,5 +1,5 @@
 /**
- * File Upload Module
+ * File Upload Module of Web Application
  * 
  * Handles file input, drag-and-drop functionality, file validation,
  * and Excel file parsing using SheetJS.

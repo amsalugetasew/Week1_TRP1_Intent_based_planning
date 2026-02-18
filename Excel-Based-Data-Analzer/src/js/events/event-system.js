@@ -1,5 +1,5 @@
 /**
- * Event System
+ * Event System of Web Application
  * 
  * Custom event management system for the Excel Analyzer application.
  */

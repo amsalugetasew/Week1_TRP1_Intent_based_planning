@@ -1,5 +1,5 @@
 /**
- * Default Values
+ * Default Values of Web Application
  * 
  * Default configuration values and presets for the Excel Analyzer application.
  */

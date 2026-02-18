@@ -1,5 +1,5 @@
 /**
- * Analytics Module
+ * Analytics Module of Web Application
  * 
  * Handles data analysis, statistical calculations, and insights generation.
  */

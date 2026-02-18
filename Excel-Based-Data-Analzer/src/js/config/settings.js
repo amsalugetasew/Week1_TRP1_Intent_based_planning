@@ -1,5 +1,5 @@
 /**
- * Settings Manager
+ * Settings Manager of Web Application
  *
  * Lightweight settings storage for the Excel Analyzer app.
  */

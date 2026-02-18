@@ -1,5 +1,5 @@
 /**
- * Theme Manager
+ * Theme Manager of Web Application
  * 
  * Manages theme switching and CSS custom properties for the Excel Analyzer application.
  */

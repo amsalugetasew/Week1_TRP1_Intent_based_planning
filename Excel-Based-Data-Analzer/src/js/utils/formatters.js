@@ -1,7 +1,7 @@
 /**
  * Formatting Utilities
  * 
- * Data formatting functions for the Excel Analyzer application.
+ * Data formatting functions for the Excel Analyzer Web application.
  */
 
 class Formatters {

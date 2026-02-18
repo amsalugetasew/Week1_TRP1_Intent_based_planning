@@ -1,5 +1,5 @@
 /**
- * Dashboard Module
+ * Dashboard Module of Web Application
  *
  * Renders lightweight KPI and chart widgets into the dashboard section.
  */

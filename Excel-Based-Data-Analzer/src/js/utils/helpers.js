@@ -1,7 +1,7 @@
 /**
  * Helper Utilities
  * 
- * Common utility functions for the Excel Analyzer application.
+ * Common utility functions for the Excel Analyzer Web application.
  */
 
 class Helpers {

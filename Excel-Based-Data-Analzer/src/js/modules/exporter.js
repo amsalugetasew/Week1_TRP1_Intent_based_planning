@@ -1,5 +1,5 @@
 /**
- * Export Module
+ * Export Module of Web Application
  *
  * Handles export to PDF, Excel, CSV, JSON and PNG chart image.
  */

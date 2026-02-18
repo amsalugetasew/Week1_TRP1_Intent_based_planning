@@ -1,7 +1,7 @@
 /**
  * Validation Utilities
  * 
- * Input validation functions for the Excel Analyzer application.
+ * Input validation functions for the Excel Analyzer Web application.
  */
 
 class Validators {

@@ -1,5 +1,5 @@
 /**
- * Data Processing Module
+ * Data Processing Module of Web Application
  * 
  * Handles data analysis, preprocessing, missing value detection,
  * outlier identification, and data cleaning.

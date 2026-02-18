@@ -2,7 +2,7 @@
  * Excel Analyzer - Main Application Entry Point
  *
  * Provides an end-to-end browser workflow:
- * upload -> preview -> analysis/chart -> dashboard -> export.
+ * upload -> preview -> analysis/chart -> dashboard -> export in PDF, Excel or chart.
  */
 
 const appState = {

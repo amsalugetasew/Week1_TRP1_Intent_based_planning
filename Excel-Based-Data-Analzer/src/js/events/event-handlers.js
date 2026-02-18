@@ -1,5 +1,5 @@
 /**
- * Event Handlers
+ * Event Handlers of Web Application
  * 
  * Centralized event handling for the Excel Analyzer application.
  */
