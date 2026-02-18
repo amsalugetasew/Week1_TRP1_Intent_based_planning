@@ -31,7 +31,7 @@ Maps active goals to concrete repository areas.
 When structure changes, update the following together in one pass:
 
 1. `README.md` (workspace root)
-2. `Excel-Based-Data-Analzer/README.md` (app-level)
+2. `Week1_TRP1_Intent_based_planning/README.md` (app-level)
 3. `specify/project_structure/project_structure.md`
 
 
