@@ -98,11 +98,16 @@ class FileUploadManager {
     }
     
     validateFile(file) {
-        // Check file type
-        const allowedTypes = ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 
-                              'application/vnd.ms-excel'];
-        
-        if (!allowedTypes.includes(file.type)) {
+        // Check file type (MIME + extension fallback)
+        const allowedTypes = [
+            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            'application/vnd.ms-excel'
+        ];
+        const lowerName = (file.name || '').toLowerCase();
+        const hasValidExtension = lowerName.endsWith('.xlsx') || lowerName.endsWith('.xls');
+        const hasValidMime = allowedTypes.includes(file.type);
+
+        if (!hasValidMime && !hasValidExtension) {
             return { isValid: false, error: 'Invalid file type. Please upload an Excel file (.xlsx or .xls)' };
         }
         
