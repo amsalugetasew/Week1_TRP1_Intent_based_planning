@@ -3,7 +3,7 @@
 ## 1. Functional Requirements
 
 ### 1.1 File Upload Module
-- **FR-001**: System SHALL accept Excel files (.xlsx, .xls) from users
+- **FR-001**: System SHALL accept Excel files (.xlsx, .xls .csv) from users
 - **FR-002**: System SHALL validate file format and size (max 50MB)
 - **FR-003**: System SHALL display file upload progress
 - **FR-004**: System SHALL provide error messages for invalid files

@@ -52,7 +52,7 @@ Design goals:
 - Make extension points explicit and reusable
 - Allow priority ordering and one-time hooks
 
-## 4) Data Flow
+## 4) Data Flow Layer
 
 ```text
 User File Input

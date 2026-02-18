@@ -2,7 +2,7 @@
 
 ## Preamble
 
-We, the developers and contributors to the Excel Analyzer Project, recognize the importance of creating a robust, user-friendly, and accessible web-based tool for Excel data analysis. This constitution establishes the fundamental principles, values, and governance structure that guide our development efforts and ensure the project's success and sustainability.
+We, the developers and contributors to the Excel Analyzer Project, recognize the importance of creating a robust, user-friendly, and accessible web-based tool for Excel data analysis. This constitution establishes the fundamental principles, values, and governance the structure that guide our development efforts and ensure the project's success and sustainability.
 
 ## Core Principles
 

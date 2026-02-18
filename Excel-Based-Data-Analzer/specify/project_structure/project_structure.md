@@ -70,6 +70,7 @@ Week1_TRP1_Intent_based_planning/
 
 ## Maintenance Rule
 
-Whenever files/folders are reorganized, update this document and both README files in the same change.
+Whenever files/folders are reorganized, update this
+ document and both README files in the same change.
 
 
