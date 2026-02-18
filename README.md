@@ -71,7 +71,7 @@ Week1_TRP1_Intent_based_planning/
 ## Quick Start
 
 1. Clone or download this project
-2. Open `src/index.html` in a web browser
+2. Open `src/index.html` in a web browser (or using terminal run through the command >  *start Excel-Based-Data-Analzer/src/index.html*)
 3. Upload an Excel file to begin analysis
 4. Explore the interactive dashboard and export results
 
