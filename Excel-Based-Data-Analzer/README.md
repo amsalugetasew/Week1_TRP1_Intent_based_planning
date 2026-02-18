@@ -27,47 +27,45 @@ This project provides a comprehensive Excel analysis solution that allows users 
 
 ```
 Week1_TRP1_Intent_based_planning/
-```text
-Excel-Based-Data-Analzer/
-├── README.md
-├── specify/
-│   ├── specification.md
-│   ├── memory/
-│   │   └── constitution.md
-│   ├── plan/
-│   │   └── plan.md
-│   ├── architecture/
-│   │   └── architecture.md
-│   └── project_structure/
-│       └── project_structure.md
-└── src/
-    ├── index.html
-    ├── css/
-    │   └── styles.css
-    └── js/
-        ├── main.js
-        ├── config/
-        │   ├── defaults.js
-        │   ├── settings.js
-        │   └── themes.js
-        ├── events/
-        │   ├── event-handlers.js
-        │   └── event-system.js
-        ├── modules/
-        │   ├── analytics.js
-        │   ├── dashboard.js
-        │   ├── data-processor.js
-        │   ├── exporter.js
-        │   ├── file-upload.js
-        │   ├── help.js
-        │   ├── notifications.js
-        │   ├── settings.js
-        │   └── visualizer.js
-        └── utils/
-            ├── formatters.js
-            ├── helpers.js
-            └── validators.js
-```
+├── Excel-Based-Data-Analzer/
+    ├── README.md
+    ├── specify/
+    │   ├── specification.md
+    │   ├── memory/
+    │   │   └── constitution.md
+    │   ├── plan/
+    │   │   └── plan.md
+    │   ├── architecture/
+    │   │   └── architecture.md
+    │   └── project_structure/
+    │       └── project_structure.md
+    └── src/
+        ├── index.html
+        ├── css/
+        │   └── styles.css
+        └── js/
+            ├── main.js
+            ├── config/
+            │   ├── defaults.js
+            │   ├── settings.js
+            │   └── themes.js
+            ├── events/
+            │   ├── event-handlers.js
+            │   └── event-system.js
+            ├── modules/
+            │   ├── analytics.js
+            │   ├── dashboard.js
+            │   ├── data-processor.js
+            │   ├── exporter.js
+            │   ├── file-upload.js
+            │   ├── help.js
+            │   ├── notifications.js
+            │   ├── settings.js
+            │   └── visualizer.js
+            └── utils/
+                ├── formatters.js
+                ├── helpers.js
+                └── validators.js
 ```
 
 ## Quick Start
