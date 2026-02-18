@@ -1,0 +1,13 @@
+version: 1
+updated_at: "2026-02-18T14:54:00+03:00"
+project: "Excel Analyzer"
+
+active_intents:
+  - id: INTENT-001
+    title: "Maintain project structure and planning docs"
+    status: "active"
+    owner: "agent"
+    priority: "high"
+    notes:
+      - "Docs are organized under specify/"
+      - "Keep structure references synchronized"
