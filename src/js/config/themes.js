@@ -7,6 +7,84 @@
 class ThemeManager {
     constructor() {
         this.themes = {
+            royal: {
+                name: '👑 Royal',
+                description: 'Purple, Gold, Black & White — elegant royal palette',
+                cssVariables: {
+                    '--primary-color': '#6a0dad',
+                    '--secondary-color': '#FFD700',
+                    '--success-color': '#4caf50',
+                    '--danger-color': '#e53935',
+                    '--warning-color': '#FFD700',
+                    '--info-color': '#ab47bc',
+                    '--light-color': '#ffffff',
+                    '--dark-color': '#0d0d0d',
+
+                    '--bg-primary': '#ffffff',
+                    '--bg-secondary': '#f5f0ff',
+                    '--bg-accent': '#ede7f6',
+
+                    '--text-primary': '#0d0d0d',
+                    '--text-secondary': '#4a148c',
+                    '--text-muted': '#7b5ea7',
+
+                    '--border-color': '#ce93d8',
+                    '--shadow': '0 0.125rem 0.25rem rgba(106, 13, 173, 0.15)',
+                    '--shadow-lg': '0 0.5rem 1rem rgba(106, 13, 173, 0.25)',
+
+                    '--gold-color': '#FFD700',
+                    '--gold-dark': '#c9a800',
+                    '--purple-dark': '#4a148c',
+                    '--purple-mid': '#6a0dad',
+                    '--purple-light': '#ab47bc',
+
+                    '--font-family': '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+                    '--font-size-base': '1rem',
+                    '--line-height-base': '1.5',
+                    '--border-radius': '0.375rem',
+                    '--border-radius-lg': '0.5rem',
+                    '--border-radius-sm': '0.25rem'
+                }
+            },
+            'royal-dark': {
+                name: '🌑 Royal Dark',
+                description: 'Black, Deep Purple & Gold — dark royal palette',
+                cssVariables: {
+                    '--primary-color': '#ce93d8',
+                    '--secondary-color': '#FFD700',
+                    '--success-color': '#66bb6a',
+                    '--danger-color': '#ef5350',
+                    '--warning-color': '#FFD700',
+                    '--info-color': '#ba68c8',
+                    '--light-color': '#0d0d0d',
+                    '--dark-color': '#ffffff',
+
+                    '--bg-primary': '#0d0d0d',
+                    '--bg-secondary': '#1a0a2e',
+                    '--bg-accent': '#2d1b4e',
+
+                    '--text-primary': '#ffffff',
+                    '--text-secondary': '#FFD700',
+                    '--text-muted': '#ce93d8',
+
+                    '--border-color': '#4a148c',
+                    '--shadow': '0 0.125rem 0.25rem rgba(0, 0, 0, 0.6)',
+                    '--shadow-lg': '0 0.5rem 1rem rgba(206, 147, 216, 0.2)',
+
+                    '--gold-color': '#FFD700',
+                    '--gold-dark': '#c9a800',
+                    '--purple-dark': '#4a148c',
+                    '--purple-mid': '#6a0dad',
+                    '--purple-light': '#ce93d8',
+
+                    '--font-family': '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+                    '--font-size-base': '1rem',
+                    '--line-height-base': '1.5',
+                    '--border-radius': '0.375rem',
+                    '--border-radius-lg': '0.5rem',
+                    '--border-radius-sm': '0.25rem'
+                }
+            },
             light: {
                 name: 'Light',
                 description: 'Clean and bright interface',
@@ -19,19 +97,25 @@ class ThemeManager {
                     '--info-color': '#17a2b8',
                     '--light-color': '#f8f9fa',
                     '--dark-color': '#343a40',
-                    
+
                     '--bg-primary': '#ffffff',
                     '--bg-secondary': '#f8f9fa',
                     '--bg-accent': '#e9ecef',
-                    
+
                     '--text-primary': '#212529',
                     '--text-secondary': '#6c757d',
                     '--text-muted': '#6c757d',
-                    
+
                     '--border-color': '#dee2e6',
                     '--shadow': '0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)',
                     '--shadow-lg': '0 0.5rem 1rem rgba(0, 0, 0, 0.15)',
-                    
+
+                    '--gold-color': '#ffc107',
+                    '--gold-dark': '#e0a800',
+                    '--purple-dark': '#6f42c1',
+                    '--purple-mid': '#7b1fa2',
+                    '--purple-light': '#ab47bc',
+
                     '--font-family': '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
                     '--font-size-base': '1rem',
                     '--line-height-base': '1.5',
@@ -52,19 +136,25 @@ class ThemeManager {
                     '--info-color': '#22d3ee',
                     '--light-color': '#121212',
                     '--dark-color': '#ffffff',
-                    
+
                     '--bg-primary': '#121212',
                     '--bg-secondary': '#1e1e1e',
                     '--bg-accent': '#2d2d2d',
-                    
+
                     '--text-primary': '#ffffff',
                     '--text-secondary': '#b0b0b0',
                     '--text-muted': '#8e8e8e',
-                    
+
                     '--border-color': '#3a3a3a',
                     '--shadow': '0 0.125rem 0.25rem rgba(0, 0, 0, 0.5)',
                     '--shadow-lg': '0 0.5rem 1rem rgba(0, 0, 0, 0.3)',
-                    
+
+                    '--gold-color': '#ffd43b',
+                    '--gold-dark': '#e0a800',
+                    '--purple-dark': '#6f42c1',
+                    '--purple-mid': '#7b1fa2',
+                    '--purple-light': '#ab47bc',
+
                     '--font-family': '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
                     '--font-size-base': '1rem',
                     '--line-height-base': '1.5',
@@ -174,7 +264,7 @@ class ThemeManager {
             }
         };
         
-        this.currentTheme = 'light';
+        this.currentTheme = 'royal';
         this.element = document.documentElement;
     }
     
@@ -254,11 +344,11 @@ class ThemeManager {
     }
     
     /**
-     * Toggle between light and dark themes
+     * Toggle between Royal (light) and Royal Dark themes
      */
     toggleTheme() {
         const current = this.getCurrentTheme();
-        const newTheme = current === 'light' ? 'dark' : 'light';
+        const newTheme = current === 'royal-dark' ? 'royal' : 'royal-dark';
         this.setTheme(newTheme);
     }
     
@@ -278,6 +368,7 @@ class ThemeManager {
     
     /**
      * Initialize theme from localStorage or system preference
+     * Defaults to the Royal (Purple/Gold/Black/White) theme
      */
     init() {
         // Check localStorage first
@@ -286,12 +377,12 @@ class ThemeManager {
             this.setTheme(savedTheme);
             return;
         }
-        
-        // Check system preference
+
+        // Check system preference — map to Royal variants
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            this.setTheme('dark');
+            this.setTheme('royal-dark');
         } else {
-            this.setTheme('light');
+            this.setTheme('royal');
         }
     }
     
